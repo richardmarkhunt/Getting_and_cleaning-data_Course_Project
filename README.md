@@ -1,4 +1,5 @@
-## ReadMe file for Getting and Cleaning Data Course Project
+## README file for Getting and Cleaning Data
+## Course Project
 
 This GitHub repository includes the R script and associated documentation for the Course Project which is a requirement for the "Getting and Cleaning data" course on Coursera.
 
@@ -32,9 +33,14 @@ More background and information on the nature of the experiments carried out, th
 
 ### Files included in this repository
 
-* README.md: this file
-* CodeBook.md: information on studentID, activities and measurements recorded, raw data files containing experiment data and the data transformations undertaken as part of this project to produce a tidy data set
-* run_analysis.R: R script to transform raw data files into a tidy data set which is represented by a text file output by this script
-* ind_tidydata_table.txt: tidy data set output of R script
+* README.md:  this file
+* CodeBook.md:  information on studentID, activities and measurements recorded, raw data files containing experiment data and the data transformations undertaken as part of this project to produce a tidy data set
+* run_analysis.R:  R script to transform raw data files into a tidy data set which is represented by a text file output by this script
+* ind_tidydata_table.txt:  tidy data set output of R script
+
+The independent tidy data txt file (ind_tidydata_table.txt) is the output of run_analysis.R and can be read into R with the following R code:
+
+data <- read.table(file_path, header = TRUE)
+View(data)
 
 END
